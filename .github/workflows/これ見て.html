@@ -1,43 +1,65 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | My Game Dev Journey</title>
+    <style>
+        /* A little bit of styling to make it look clean */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #f4f4f9;
+            color: #333;
+            line-box: 1.6;
+        }
+        h1 { color: #2c3e50; }
+        h2 { color: #34495e; border-bottom: 2px solid #34495e; padding-bottom: 5px; }
+        .skills-list { display: flex; gap: 10px; list-style: none; padding: 0; }
+        .skills-list li { background: #34495e; color: #fff; padding: 5px 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+    <header>
+        <h1>こんにちは。私はロリコンです</h1>
+        <p>私はとてもホットです</p>
+    </header>
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    <section>
+        <h2>私について</h2>
+        <p>名前の通り幼女が好きです。性癖はロリの鼠径部です。</p>
+    </section>
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    <section>
+        <h2>その他の性癖</h2>
+        <ul class="skills-list">
+            <li>双子</li>
+            <li>ケモミミ</li>
+            <li>オッドアイ</li>
+            <li>病弱</li>
+            <li>純真無垢</li>
+            <li>共依存</li>
+            <li>純愛</li>
+        </ul>
+    </section>
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    <section>
+        <h2>性癖が歪んだ経緯</h2>
+        <p>とあるVを見た瞬間自分の中の何かが吹っ切れたんですよね。日本人は昔からロリが好きだから仕方ないね。</p>
+        <p>ロリの供給待ってます</p>
+    </section>
 
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+    <section>
+        <h2>好きなキャラ(一部)</h2>
+        <p>羽咋ツバサ(ブルーアーカイブ)、天童ケイ(ブルーアーカイブ)、箭吹シュロ(ブルーアーカイブ)、天神山オトギ(ブルーアーカイブ)、橘ヒカリ(ブルーアーカイブ)、橘ノゾミ(ブルーアーカイブ)、桔梗 小夜曲(イロドリミドリ)、ユニ(CHUNITHM)、ノルムーホローウェル(ゼンレスゾーンゼロ)、マイナス(リバースブルー×リバースエンド)、リリィ(リバースブルー×リバースエンド)、リリィ(テトテ×コネクト)、ロッシ(アークナイツ エンドフィールド)、篠澤 広(学園アイドルマスター)、冰鞠(無垢の神)、魔王ちゃん(ステラソラ)、フリージア(ステラソラ)、ホタル(ステラソラ)、コハク(ステラソラ)、夜乃くろむ(ぶいすぽ！)、レクイエム(NTE),してはる(個人勢VTuber),リィベル(ティンクルスターナイツ)、</p>
+    </section>
+
+    <footer>
+        <p>©ロリコン</p>
+    </footer>
+
+</body>
+</html>
